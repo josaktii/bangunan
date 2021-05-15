@@ -9,7 +9,7 @@
 <body>
     <h2>Tambah Data Karyawan</h2>
     <form action="prosestambah.php" method="post">
-        <input type="text" placeholder="Nama Karyawan" name="namakaryawan"><br>
+        <input type="text" placeholder="Nama Karyawan" name="namakaryawan" autofocus><br>
         <input type="tel" name="telkaryawan" id="" placeholder="Nomor Telepon" pattern="[0-9]{10-12}"><br>
         <textarea name="alamatkaryawan" id="" cols="30" rows="10"></textarea><br>
         <input type="text" name="jabatan" id="" placeholder="Jabatan"><br>

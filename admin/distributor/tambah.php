@@ -9,7 +9,7 @@
 <body>
     <h2>Tambah Data Distributor</h2>
     <form action="prosestambah.php" method="post">
-        <input type="text" placeholder="Nama distributor" name="namadistributor"><br>
+        <input type="text" placeholder="Nama distributor" name="namadistributor" autofocus><br>
         <input type="tel" name="teldistributor" id="" placeholder="Nomor Telepon" pattern="[0-9]{10-12}"><br>
         <textarea name="alamatdistributor" id="" cols="30" rows="10"></textarea><br>
         <button type="submit" name="submit">Tambah</button>

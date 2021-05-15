@@ -11,7 +11,7 @@
 <body>
     <h2>Tambah Data Karyawan</h2>
     <form action="prosestambah.php" method="post">
-        <input type="text" name="uname" placeholder="Username"><br>
+        <input type="text" name="uname" placeholder="Username" autofocus><br>
         <input type="password" name="pass" id="" placeholder="*******"><br>
         <select name="access" id="">
             <option hidden>Pilih hak akses</option>
