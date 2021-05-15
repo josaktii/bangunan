@@ -11,7 +11,7 @@
 <body>
     <h2>Tambah Data Barang</h2>
     <form action="prosestambah.php" method="post">
-        <select name="barang" id="">
+        <select name="barang" id="" autofocus>
             <option hidden>Pilih Barang</option>
             <?php
             include('../../config/connect.php');
@@ -24,6 +24,7 @@
             $querytampil2 = $connect->query("SELECT id_distributor, nama_distributor FROM distributor");
             foreach ($querytampil2 as $tampildistributor => $distributor) { ?> <option value="<?= $distributor['id_distributor'] ?>"><?= $distributor['nama_distributor'] ?></option><?php } ?>
         </select><br>
+        <input type="date" name="hari" placeholder="Harga Pokok"><br>
         <input type="number" name="hargapokok" placeholder="Harga Pokok"><br>
         <button type="submit" name="submit">Tambah</button>
     </form>

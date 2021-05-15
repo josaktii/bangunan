@@ -4,7 +4,8 @@ if (isset($_POST['submit'])) {
     $barang = $_POST['barang'];
     $distributor = $_POST['distributor'];
     $hargapokok = $_POST['hargapokok'];
-    $hariini = date('Y-m-d');
+    $hariini = $_POST['hari'];
+    // $hariini = date('Y-m-d');
     $querybarang = $connect->query("INSERT INTO pasok VALUES (NULL, '$barang', '$hargapokok', '$hariini', '$distributor')");
 
     if ($querybarang) {

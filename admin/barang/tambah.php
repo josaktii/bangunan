@@ -9,7 +9,7 @@
 <body>
     <h2>Tambah Data Barang</h2>
     <form action="prosestambah.php" method="post">
-        <input type="text" placeholder="Nama barang" name="namabarang"><br>
+        <input type="text" placeholder="Nama barang" name="namabarang" autofocus><br>
         <input type="number" name="stok" id="" placeholder="Stok Barang"><br>
         <input type="number" name="hargajual" id="" placeholder="Harga jual Barang"><br>
         <button type="submit" name="submit">Tambah</button>

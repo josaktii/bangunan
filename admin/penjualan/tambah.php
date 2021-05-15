@@ -11,7 +11,7 @@
 <body>
     <h2>Tambah Data Karyawan</h2>
     <form action="prosestambah.php" method="post">
-        <select name="barang" id="">
+        <select name="barang" id="" autofocus>
             <option hidden>Pilih Barang</option>
             <?php
             include('../../config/connect.php');
