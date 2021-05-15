@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
+<<<<<<< HEAD
 -- Generation Time: May 15, 2021 at 07:43 PM
+=======
+-- Generation Time: May 13, 2021 at 02:03 AM
+>>>>>>> master
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -39,6 +43,7 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_barang`, `nama_barang`, `stok`, `harga_jual`) VALUES
+<<<<<<< HEAD
 (4, 'Kawat Loket', 20, 90000),
 (5, 'Terpal Gajah Super', 10, 170000),
 (6, 'Semen Putih Jaguar', 30, 75000),
@@ -55,6 +60,10 @@ INSERT INTO `barang` (`id_barang`, `nama_barang`, `stok`, `harga_jual`) VALUES
 (17, 'Kuas Eternal', 5, 45000),
 (18, 'Amplas Crocodile 1200', 50, 4500),
 (19, 'Kran Amico PCV Taman 1/2', 4, 130000);
+=======
+(2, 'Semen', 155, 45000),
+(3, 'Paku', 1000, 25000);
+>>>>>>> master
 
 -- --------------------------------------------------------
 
@@ -74,6 +83,7 @@ CREATE TABLE `distributor` (
 --
 
 INSERT INTO `distributor` (`id_distributor`, `nama_distributor`, `no_telpon_distributor`, `alamat_distributor`) VALUES
+<<<<<<< HEAD
 (3, 'Sumber Usaha', '082254997070', 'Jl. Pramuka KM. 6, Banjarmasin'),
 (4, 'Berkat Karunia', '081346295888', 'Jl. Perdagangan Banjarmasin'),
 (5, 'PT. Banjar Kencana Sakti', '05113353179', 'Jl. Sutoyo S No. 128'),
@@ -84,6 +94,9 @@ INSERT INTO `distributor` (`id_distributor`, `nama_distributor`, `no_telpon_dist
 (10, 'CV. Sukses Mandiri Sentosa', '081351080303', 'Jl. A Yani KM 15 No. 3 Gambut'),
 (11, 'Sinar Borneo Adijaya Perkasa', '05114221593', ''),
 (12, 'Hidup Abadi', '081349491111', 'Pergudangan Timur Banua No. 12 Basirih');
+=======
+(2, 'Nopal Inc.', '02179187676', 'Rumahnya nopal');
+>>>>>>> master
 
 -- --------------------------------------------------------
 
@@ -104,10 +117,16 @@ CREATE TABLE `karyawan` (
 --
 
 INSERT INTO `karyawan` (`id_karyawan`, `nama_karyawan`, `jabatan`, `no_telpon`, `alamat`) VALUES
+<<<<<<< HEAD
 (6, 'Widodo', 'Pemilik', '082148575069', 'Jl. Akasia RT. 05 RW. 002'),
 (7, 'Mulyadi', 'Kasir', '085248951648', 'JL. Akasia RT. 05, RW. 002'),
 (8, 'Riski', 'Karyawan', '081253302175', 'JL. Swarga RT. 01, RW. 002'),
 (9, 'Helmi', 'Karyawan', '085346557818', 'Jl. Sukamara RT. 02, RW. 003');
+=======
+(1, 'Wandi', 'Kuli Porepah', '02179187676', 'Masih Pondasi'),
+(3, 'Dian', 'Kuli Juga', '0175421142', 'Rumah mamanya'),
+(5, 'Adit', 'Kuli', '012457854754', 'Gatau');
+>>>>>>> master
 
 -- --------------------------------------------------------
 
@@ -128,6 +147,7 @@ CREATE TABLE `pasok` (
 --
 
 INSERT INTO `pasok` (`id_pasok`, `id_barang`, `harga_pokok`, `tanggal_datang`, `id_distributor`) VALUES
+<<<<<<< HEAD
 (3, 4, 85000, '2020-11-18', 3),
 (4, 5, 164500, '2020-11-18', 3),
 (5, 6, 72500, '2020-12-02', 4),
@@ -144,6 +164,9 @@ INSERT INTO `pasok` (`id_pasok`, `id_barang`, `harga_pokok`, `tanggal_datang`, `
 (16, 17, 38000, '2021-01-25', 12),
 (17, 18, 3000, '2021-01-25', 12),
 (18, 19, 125000, '2021-01-25', 12);
+=======
+(2, 2, 40000, '2021-05-10', 2);
+>>>>>>> master
 
 -- --------------------------------------------------------
 
@@ -165,8 +188,12 @@ CREATE TABLE `penjualan` (
 
 INSERT INTO `penjualan` (`id_penjualan`, `id_barang`, `jumlah`, `total`, `tanggal_jual`) VALUES
 (2, 2, 2, 90000, '2021-05-10'),
+<<<<<<< HEAD
 (3, 3, 250, 6250000, '2021-05-10'),
 (4, 3, 12, 300000, '2021-05-13');
+=======
+(3, 3, 250, 6250000, '2021-05-10');
+>>>>>>> master
 
 -- --------------------------------------------------------
 
@@ -183,6 +210,16 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+<<<<<<< HEAD
+=======
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_user`, `username`, `password`, `access`, `id_karyawan`) VALUES
+(2, 'admin', 'admin', '1', 1);
+
+--
+>>>>>>> master
 -- Indexes for dumped tables
 --
 
@@ -235,31 +272,51 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
+<<<<<<< HEAD
   MODIFY `id_barang` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+=======
+  MODIFY `id_barang` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+>>>>>>> master
 
 --
 -- AUTO_INCREMENT for table `distributor`
 --
 ALTER TABLE `distributor`
+<<<<<<< HEAD
   MODIFY `id_distributor` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+=======
+  MODIFY `id_distributor` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+>>>>>>> master
 
 --
 -- AUTO_INCREMENT for table `karyawan`
 --
 ALTER TABLE `karyawan`
+<<<<<<< HEAD
   MODIFY `id_karyawan` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+=======
+  MODIFY `id_karyawan` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+>>>>>>> master
 
 --
 -- AUTO_INCREMENT for table `pasok`
 --
 ALTER TABLE `pasok`
+<<<<<<< HEAD
   MODIFY `id_pasok` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+=======
+  MODIFY `id_pasok` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+>>>>>>> master
 
 --
 -- AUTO_INCREMENT for table `penjualan`
 --
 ALTER TABLE `penjualan`
+<<<<<<< HEAD
   MODIFY `id_penjualan` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+=======
+  MODIFY `id_penjualan` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+>>>>>>> master
 
 --
 -- AUTO_INCREMENT for table `user`
@@ -287,4 +344,8 @@ COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+<<<<<<< HEAD
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+=======
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+>>>>>>> master
